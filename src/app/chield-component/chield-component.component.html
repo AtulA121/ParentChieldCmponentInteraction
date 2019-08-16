@@ -1,0 +1,11 @@
+<p>chield-component works!</p>
+
+<p *ngIf="parData; then thenTemplate; else elseTemplate">from Parent Data... </p>
+<ng-template #thenTemplate>
+    thenTemplate
+</ng-template>
+<ng-template #elseTemplate>
+    elseTemplate
+</ng-template>
+<button (click)="greet()">Call To Parent</button>
+{{message}}

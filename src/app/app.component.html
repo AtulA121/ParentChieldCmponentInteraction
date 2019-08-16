@@ -1,0 +1,5 @@
+<p>Parent Component...</p>
+<app-chield-component #chield [parentData]="parentData" (greetEvent)="greeting($event)"></app-chield-component>
+<button (click)="chield.chieldData(parentData)">chieldMethod</button>
+<br><br>
+<button (click)="sayHii()">say hiii to chield...</button>
